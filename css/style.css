@@ -1,0 +1,114 @@
+html,
+body {
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+    color: #fff;
+    font-weight: 600;
+    font-size: 150px;
+}
+
+.container {
+    background: #2e3436;
+    height: 100%;
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 1024px;
+}
+
+.check-simple label {
+    display: block;
+    text-align: center;
+}
+
+.check-simple input {
+    background: #006c90;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: 0 0 10px rgba(255,255,255, .6) inset;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 1rem;
+    outline:none;
+    border: 1px solid #fff;
+    width: 90%;
+    display: block;
+    margin: 50px auto;
+    height: 175px;
+}
+
+.check-simple input::-webkit-input-placeholder {color: #6dc1ec;}
+.check-simple input::-moz-placeholder          {color: #6dc1ec;}
+.check-simple input:-moz-placeholder           {color: #6dc1ec;}
+.check-simple input:-ms-input-placeholder      {color: #6dc1ec;}
+
+.check-simple span {
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    min-height: 150px;
+}
+
+@media (max-width: 1300px) {
+    html,
+    body {
+        font-size: 125px;
+    }
+
+    .container {
+        width: 1024px;
+    }
+}
+
+@media (max-height: 600px) {
+    html,
+    body {
+        font-size: 100px;
+    }
+
+    .container {
+        max-width: 100%;
+        min-height: 400px;
+        height: auto;
+        position: absolute;
+        top:50%;
+        width: 100%;
+        transform: translate(0,-50%);
+    }
+
+
+    .check-simple label {
+        text-align: center;
+        float: left;
+        width: 55%;
+        font-size: 1rem;
+        line-height:175px;
+    }
+
+    .check-simple input {
+        width: 43%;
+        float: left;
+        margin: 0;
+    }
+
+    .check-simple span {
+        font-size: 1.5rem;
+        margin-top: 20px;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+@media (max-height: 600px) and (max-width: 1300px){
+    html,body {
+        font-size: 75px;
+    }
+
+    .check-simple span {
+        margin-top: 30px;
+    }
+}
